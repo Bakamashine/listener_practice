@@ -1,0 +1,4 @@
+vendor
+*.log
+sferum_in.log
+__pycache__
