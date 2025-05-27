@@ -35,6 +35,10 @@ async def main(server, key, ts, vk_chat_ids, access_token, cookie, pts):
         except Exception as e:
             logging.exception(f"Ошибка при отправке сообщения в чат {chat_id}: {e}")
     print("Сообщения отправлены!")
-    result = PostResponse(PRODUCTION, {"name": text})
-    print("Результат отправки POST запроса: ", result)
-    exit(0)
+    try:
+        result = PostResponse(PRODUCTION, {"name": text})
+        print("Результат отправки POST запроса: ", result)
+        exit(0)
+    except Exception:
+        print("Результат отправки POST запроса: ", {"name": "Ничего не было отправлено", "code": 1})
+        exit(1)

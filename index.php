@@ -23,9 +23,15 @@ $result = $logs->getAll();
             foreach ($result as $res):
                 ?>
                 <tr>
-                    <th><?= $res['id'] ?></th>
-                    <th><?= $res['name'] ?></th>
-                    <th><?= $res['code'] ?></th>
+                    <td><?= $res['id'] ?></td>
+                    <td><?= $res['name'] ?></td>
+                    <?php if ($res['code'] == 1 || $res['code'] == '1'): ?>
+                        <td>
+                            <p><?= $res['code'] ?></p>
+                        </td>
+                    <?php else: ?>
+                        <p class="text-danger"><?= $res['code'] ?></p>
+                    <?php endif; ?>
                 </tr>
             <?php endforeach;
         else:
