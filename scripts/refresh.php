@@ -2,7 +2,7 @@
 
 use Database\Migrate\DatabaseMigrate;
 
-require($_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php");
+require "../includes/minimal_header.php";
 
 $migrate = new DatabaseMigrate();
 $migrate->refresh();
