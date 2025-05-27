@@ -27,10 +27,12 @@ $result = $logs->getAll();
                     <td><?= $res['name'] ?></td>
                     <?php if ($res['code'] == 1 || $res['code'] == '1'): ?>
                         <td>
-                            <p><?= $res['code'] ?></p>
+                            <p class="text-danger"><?= $res['code'] ?></p>
                         </td>
                     <?php else: ?>
-                        <p class="text-danger"><?= $res['code'] ?></p>
+                        <td>
+                            <p><?= $res['code'] ?></p>
+                        </td>
                     <?php endif; ?>
                 </tr>
             <?php endforeach;
