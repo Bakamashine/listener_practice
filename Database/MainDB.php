@@ -20,7 +20,7 @@ class MainDB implements DBInterface
             $host = "localhost";
             $dbname = "dadamapt_list";
             $pass = "Moredock1moredock1";
-            $user = "dadamapt";
+            $user = "dadamapt_list";
             // $charset = "utf-8";
 
             $dsn = "mysql:host=$host;dbname=$dbname";
