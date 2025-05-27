@@ -20,5 +20,8 @@ foreach ($argv as $value) {
         case "-r" || "--rollback":
             require "./scripts/allrollback.php";
             break;
+        case "-re" || "--refresh":
+            require "./scripts/refresh.php";
+            break;
     }
 }

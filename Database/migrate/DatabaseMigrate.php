@@ -35,4 +35,9 @@ class DatabaseMigrate extends MainDB {
             $value->down();
         }
     }
+
+    public function refresh() {
+        $this->allRollback();
+        $this->allMigrate();
+    }
 }
