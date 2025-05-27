@@ -3,6 +3,7 @@
 function print_help() {
     echo
     "
+        Недостаточно параметров!
         -m --migrate AllMigrate,
         -r --rollback AllRollback
     ";
