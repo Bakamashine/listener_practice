@@ -2,11 +2,9 @@
 
 function print_help() {
     echo
-    "
-        Недостаточно параметров!
+    "Недостаточно параметров!
         -m --migrate AllMigrate,
-        -r --rollback AllRollback
-    ";
+        -r --rollback AllRollback";
 }
 
 if (count($argv) <= 1) {
