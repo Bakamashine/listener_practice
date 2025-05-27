@@ -15,12 +15,15 @@ foreach ($argv as $value) {
     switch ($value) {
         case "-m" || "--migrate": 
             require "./scripts/allmigrate.php";
+            echo "Все миграции были выполнены";
             break;
         case "-r" || "--rollback":
             require "./scripts/allrollback.php";
+            echo "Все миграции были откачены";
             break;
         case "-re" || "--refresh":
             require "./scripts/refresh.php";
+            echo "Все миграции были обновлены";
             break;
     }
 }
