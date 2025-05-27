@@ -12,7 +12,7 @@ if (count($argv) <= 1) {
     print_help();
 }
 
-foreach ($argv as $value) {
+foreach (array_slice($argv, 1) as $value) {
     switch ($value) {
         case "-m":
         case "--migrate": 
