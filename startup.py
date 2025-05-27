@@ -18,7 +18,7 @@ logging.basicConfig(
 ID = "2000000025"
 ID_SLIZOV = "795499845"
 
-vk_chat_ids = [ID_SLIZOV]
+vk_chat_ids = [ID]
 
 # Перейдите по ссылке: Sferum >> Ctrl + Shift + C >> Приложение>> Хранилище>> Файлы cookie >> https://web.vk.me
 # После этого вы должны увидеть таблицу со всеми файлами cookie с этого сайта
