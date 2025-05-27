@@ -6,8 +6,8 @@ MainDB::connect();
 ?>
 
 <head>
-    <!-- <link rel="stylesheet" href="/css/bootstrap.css">
-    <script src="/js/bootstrap.js"></script> -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.js"></script>
 </head>
 <header>
 	<a href="/adminer.php">Adminer</a>

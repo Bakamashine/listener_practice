@@ -4,6 +4,8 @@ namespace Model;
 
 use Database\MainDB;
 use PDO;
+use PDOException;
+use Requtize\QueryBuilder\ConnectionAdapters\PdoBridge;
 
 class Logs extends Model
 {
@@ -12,10 +14,13 @@ class Logs extends Model
 
     public function getAll()
     {
-        $stmt = self::$pdo->prepare("select * from $this->table");
-        $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
+        try {
+            $stmt = self::$pdo->query("select * from $this->table");
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
     }
     
     public function create(array $values) {
