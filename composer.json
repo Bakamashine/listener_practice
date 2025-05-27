@@ -1,0 +1,19 @@
+{
+    "name": "sinister/listener_practice",
+    "autoload": {
+        "psr-4": {
+            "Database\\": "Database/",
+            "Api\\": "Api/",
+	    "Model\\": "Model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bakamashine",
+            "email": "ivan.fa.002@gmail.com"
+        }
+    ],
+    "require": {
+        "requtize/query-builder": "dev-master"
+    }
+}
