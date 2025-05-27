@@ -21,9 +21,9 @@ class MainDB implements DBInterface
             $dbname = "dadamapt_list";
             $pass = "Moredock1moredock1";
             $user = "dadamapt";
-            $charset = "utf-8";
+            // $charset = "utf-8";
 
-            $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+            $dsn = "mysql:host=$host;dbname=$dbname";
             $opt = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
