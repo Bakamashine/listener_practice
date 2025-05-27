@@ -15,7 +15,7 @@ class MainDB implements DBInterface
      * Production
      * @return void
      */
-    public function connect() {
+    public static function connect() {
         try {
             $host = "localhost";
             $dbname = "dadamapt_list";
