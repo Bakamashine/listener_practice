@@ -260,3 +260,4 @@ Traceback (most recent call last):
     exit(0)
   File "<frozen _sitebuiltins>", line 26, in __call__
 SystemExit: 0
+INFO:root:Loop starting
